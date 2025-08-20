@@ -1,49 +1,36 @@
 <div align="center">
+<div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+<img src="logo.png" alt="Project Banner" width="90"/>
+<h1 style="font-size: 3.5em; font-weight: bold; border-bottom: none; margin: 0;">
+Mini-Omni-Reasoner
+</h1>
+</div>
 
-  <h1 style="font-size: 3.5em; font-weight: bold; border-bottom: none;">
-    Mini-Omni-Reasoner
-  </h1>
+<h3 style="color: #555; font-style: italic;">
+A novel "thinking-in-speaking" framework for real-time speech reasoning
+</h3>
 
-  <div style="display: flex; align-items: center; justify-content: center;">
-    <img src="logo.png" alt="Logo" style="height: 4em;">
-    <h3 style="display: inline-block; font-size: 1.2em; font-weight: normal; margin: 0; padding-left: 10px; opacity: 0; animation: fade-in 2s ease-in-out forwards;">
-      A novel "thinking-in-speaking" framework for real-time speech reasoning
-    </h3>
-  </div>
+<p>
+<strong>Mini-Omni-Reasoner</strong> is a pioneering speech reasoning framework for real-time spoken dialogue, built on a novel ** "thinking-in-speaking"** paradigm. It achieves state-of-the-art performance in arithmetic and contextual reasoning, and on the Spoken-MQA benchmark, it demonstrates zero decoding latency and shorter response lengths compared to baselines.
+</p>
 
-  <style>
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+<p>
+<a href="[Your ArXiv Paper Link]"><img src="https://img.shields.io/badge/arXiv-2410.XXXXX-b31b1b.svg" alt="Paper"></a>
+<a href="[Your Project Page Link]"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
+<a href="[Your Hugging Face Models Link]"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow" alt="Hugging Face Models"></a>
+<a href="[Your Online Demo Link, e.g., Hugging Face Space]"><img src="https://img.shields.io/badge/Demo-Online-orange" alt="Demo"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License"></a>
+</p>
 
-  <p>
-    <strong>Mini-Omni-Reasoner</strong> is a pioneering speech reasoning framework for real-time spoken dialogue, built on a novel <strong>"thinking-in-speaking"</strong> paradigm. It achieves state-of-the-art performance in arithmetic and contextual reasoning, and on the Spoken-MQA benchmark, it demonstrates zero decoding latency and shorter response lengths compared to baselines.
-  </p>
-
-  <p>
-    <a href="[Your ArXiv Paper Link]"><img src="https://img.shields.io/badge/arXiv-2410.XXXXX-b31b1b.svg" alt="Paper"></a>
-    <a href="[Your Project Page Link]"><img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page"></a>
-    <a href="[Your Hugging Face Models Link]"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow" alt="Hugging Face Models"></a>
-    <a href="[Your Online Demo Link, e.g., Hugging Face Space]"><img src="https://img.shields.io/badge/Demo-Online-orange" alt="Demo"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License"></a>
-  </p>
-
-  <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
-    [ <a href="#-highlights">Highlights</a> ] •
-    [ <a href="#-benchmarks">Benchmarks</a> ] •
-    [ <a href="#-quick-start">Quick Start</a> ] •
-    [ <a href="#-citation">Citation</a> ]
-  </div>
+<div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+[ <a href="#-highlights">Highlights</a> ] •
+[ <a href="#-benchmarks">Benchmarks</a> ] •
+[ <a href="#-quick-start">Quick Start</a> ] •
+[ <a href="#-citation">Citation</a> ]
+</div>
 
 </div>
+
 
 ---
 
@@ -63,15 +50,16 @@ Our work aims to solve the problem of high latency and poor user experience caus
 * **⚡️ Efficient Inference:** Our model can shorten response length by more than half (42.9 vs 116.1 words), ensuring real-time interaction.
 * **🌍 Open & Extensible:** Our code is fully open-sourced on [GitHub](https://github.com/xzf-thu/Mini-Omni-Reasoner) and built on the Thinker-Talker architecture, facilitating easy integration and extension.
 
+
 ## 🏆 Benchmarks
 
 We conducted a rigorous evaluation of Mini-Omni-Reasoner on the Spoken-MQA benchmark.
 
-| Model                   | Arithmetic (%)        | Reasoning (%)       | Response Length |
-| ------------------------- | :---------------------: | :---------------------: | :----------------: |
-| Qwen2.5-Omni (3B)           | 64.9                    | 64.0                    | 116.1 Words      |
-| **MINI-OMNI-REASONER (3B)** | **77.25**                 | **68.1**                  | **42.9 Words**      |
-| *Improvement vs Qwen*     | *`+12.4`*                | *`+4.1`*                  | *`-73.2 Words`*    |
+| Model | Arithmetic (%) | Reasoning (%) | Response Length |
+| :---: | :---: | :---: | :---: |
+| Qwen2.5-Omni (3B) | 64.9 | 64.0 | 116.1 Words |
+| **MINI-OMNI-REASONER (3B)** | **77.25** | **68.1** | **42.9 Words** |
+| *Improvement vs Qwen* | *`+12.4`* | *`+4.1`* | *`-73.2 Words`* |
 
 *All evaluations were performed on the Spoken-MQA dataset to ensure fairness. For more detailed results, please refer to our [paper]([Your ArXiv Link]).*
 
